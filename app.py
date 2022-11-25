@@ -29,7 +29,7 @@ hide_st_style = """
                 height:30px;
                 margin:1rem;
                 padding:0.8rem;
-                content:'Copyright © 2022 : Pragya Bisherwal';
+                content:'Copyright © 2022 : Ruthwik';
                 display: flex;
                 align-items:center;
                 justify-content:center;
@@ -92,41 +92,8 @@ with st.sidebar:
        """
         ,unsafe_allow_html=True,)
 
-#For directly downloading the resume on to local.
-        with open("./images/PRAGYABISHERWAL_RESUME..pdf", "rb") as file: 
-            st.download_button(
-            label="Download Resume",
-            data=file,
-            file_name='PragyaBisherwal_RESUME.pdf',
-            mime='text/pdf',
-            )
-        st.subheader("Visit My Portfolio Website 💻")
-        st.markdown(
-            """
-            <div style='
-            background-color:#A0CFD3; 
-            font-weight:bold;
-            cursor:pointer; 
-            height:2.8rem;
-            font-size:20px;
-            border-radius:10px;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-            display: flex;
-            align-items:center;
-            justify-content:center;'>
-                    <a  href="https://pragyabisherwal.netlify.app/" 
-                    style='color: white; 
-                           text-decoration:none;
-                           padding-top:6px;
-                           color: black; 
-                           padding-bottom:5px;
-                           text-align:center;'>
-                           Pragya Bisherwal 👩‍💻
-                    </a>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
+
+    
 # The github repo code.
             
     if selected == "Github-Repo":  
