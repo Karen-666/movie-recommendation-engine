@@ -94,39 +94,8 @@ with st.sidebar:
 
 
     
-# The github repo code.
-            
-    if selected == "Github-Repo":  
-        st_lottie(lottie_github,height=150,width=270,key="coding5")
-        st.subheader("Check Out The Github Repository For Movie Recommender Engine")
-        st.markdown(
-            """
-            <div style='
-            background-color:#a873b0; 
-            cursor:pointer; 
-            height:2.8rem;
-            font-size:25px;
-            font-weight:bolder;
-            border-radius:5px;
-            font-family: Helvetica, sans-serif;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-            display: flex;
-            align-items:center;
-            justify-content:center;'>
-                    <a  href="https://github.com/pragyabisherwal/movie-recommendation-engine" 
-                    style='color: black; 
-                           text-decoration:none;
-                           padding-top:6px;
-                           padding-bottom:5px;
-                           text-align:center;'>
-                    GITHUB
-                    </a>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
 
-
+ 
 # Loading data and movies list from corresponding JSON files
 with open(r'data.json', 'r+', encoding='utf-8') as f:
     data = json.load(f)
