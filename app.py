@@ -14,7 +14,7 @@ import streamlit.components.v1 as components
 
 #Setting the Page Configuration
 img = Image.open('./images/favicon.png')
-st.set_page_config(page_title='Movie Recommender Engine' , page_icon=img , layout="centered",initial_sidebar_state="expanded")
+st.set_page_config(page_title='Movie Recommendation System' , page_icon=img , layout="centered",initial_sidebar_state="expanded")
 
     
 #Designing the footer and MainMenu creating the skeleton of the website.
@@ -86,7 +86,7 @@ with st.sidebar:
             border-radius:8px;
             text-align: justify;
            '>
-            I am a fresher currently pursuing my B.TECH in Computer Science.I have keen interest in website designing and developing.I am from from Delhi, India.In addition, I am capable of managing and performing well under pressure.
+            I am a fresher currently pursuing my Masters In Business Analytics.I have keen interest in AI.
         </div>
         <br>
        """
@@ -260,57 +260,12 @@ if __name__ == '__main__':
     else:
         st.write('Select option')
 
-# The video section of the website in which the demo of the application is being embedded.
-st.write("---")
-st. markdown("<h2 style='text-align:center; color:#A0CFD3;font-size:60px;font-family:monospace;float:right;'> HOW IT WORKS 😲</h2>", unsafe_allow_html=True)
-st.markdown("""<div>
-         <br>
-        <section style='float:right;'>
-            <iframe width="650" height="400" src="https://www.youtube.com/embed/DiNjSPCjkMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section> 
-    </div>
-    <br>""" , unsafe_allow_html=True)
+
 
         
 # The documentation section of the website in which the substaining crux of the development of the application 
-# is being added and embedded on to the application.
-
-st.write("---")
-st. markdown("<h1 style='text-align:center; color:#A0CFD3;font-size:55px;font-family:monospace;float:right;'>EXPLORE THE CONTENT😏</h1>", unsafe_allow_html=True)
-st.write("")
-st.write("")
-components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTdOckh6g-mN8BHmdqjCXwuhcFyG9voMhbcmsuQkVNaXHuBJWnXCIphIJywZKHfN2El5Hn455H_L_YF/embed?start=true&loop=true&delayms=3000",width=670, height=400, scrolling=True)
-
-
-
-#The contact me section of the website.Creation of an active form which directly notifies with
-# all the details of the sender along with the message om to the mail box
-
-st_lottie(lottie_loadLine,height=300,width=700,key="coding3")
-st. markdown("<h1 style='text-align:center; color:#A0CFD3;font-size:60px;font-family:monospace;'> WANT TO CONNECT 👨‍⚖️</h1>", unsafe_allow_html=True)
-
-
-# Designing of contact form 
-st.write("")
-with st.container():
-    contact_form = """
-    <form action="https://formsubmit.co/pragyabisherwal@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" style="height:50px; width:300px; font-size:14pt; margin:5px;padding:10px;border-radius:5px;" placeholder="Your name" required>
-        <input type="email" name="email" style="height:50px; width:300px; font-size:14pt;margin:5px;padding:10px;border-radius:5px;" placeholder="Your email" required>
-        <textarea name="message" style="height:150px; width:300px; font-size:14pt;margin:5px;padding:10px;border-radius:5px;" placeholder="Your message here" required></textarea>
-        <button style=" height:50px; width:300px; font-size:14pt; margin:5px; padding:10px;border-radius:5px;background-color:#90EE90" type="submit">Send</button>
-        <input type="hidden" name="_next" value="https://pragyabisherwal.github.io/ThankYou-FormSubmit/">
-    </form>
-    """
-    left_column, right_column = st.columns(2)
-    with left_column:
-        st.markdown(contact_form, unsafe_allow_html=True)
-
-        
-    with right_column:
-        st_lottie(lottie_contact,height=300,width=400,key="coding2")
-
+#
+#
 
 
        
