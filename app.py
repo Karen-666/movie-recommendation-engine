@@ -60,8 +60,8 @@ lottie_github =load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_S6v
 with st.sidebar:
     selected = option_menu(
                 menu_title="MOVIES MANIA",  # required
-                options=["Home", "About", "Github-Repo"],  # required
-                icons=["house", "person-square", "github"],  # optional
+                options=["Home", "About"],  # required
+                icons=["house", "person-square"],  # optional
                 menu_icon="cast",  # optional
                 default_index=0,  # optional
                  styles={
