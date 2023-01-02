@@ -29,7 +29,7 @@ hide_st_style = """
                 height:30px;
                 margin:1rem;
                 padding:0.8rem;
-                content:'Copyright © 2022 : Ruthwik';
+                content:'Copyright © 2022 : Karen';
                 display: flex;
                 align-items:center;
                 justify-content:center;
@@ -86,7 +86,7 @@ with st.sidebar:
             border-radius:8px;
             text-align: justify;
            '>
-            I am a fresher currently pursuing my Masters In Business Analytics.I have keen interest in AI.
+            I am a fresher currently pursuing my Undergraduate in Computer Science .I have keen interest in AI.
         </div>
         <br>
        """
